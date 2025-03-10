@@ -64,6 +64,15 @@ public class LearnDropdown {
 		 //instantiate my select class
 		 Select dd3=new Select(Ownershipdd);
 		 dd3.selectByValue("OWN_CCORP");
+		
+		//click Industry DD
+		 WebElement industrydd = driver.findElement(By.id("createLeadForm_industryEnumId"));
+		 //instantiate my select class
+		 Select dd4=new Select(industrydd);
+		 dd4.selectByVisibleText("General Services");
+		 
+		 //Close the window
+		 driver.close();
 		 
 	}
 	
